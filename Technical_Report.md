@@ -16,7 +16,7 @@ Traditional spectral imagery analysis often struggles with the high-noise, highl
 
 Below is the **ICML/CVPR-grade System Architecture Flowchart**, detailing the parallel tracks of image processing, classical feature engineering, and quantum parameter optimization.
 
-![QuantumHarvest System Architecture Flowchart](architecture_diagram.png)
+![QuantumHarvest System Architecture Flowchart](architecture_diagram_v2.png)
 
 *Figure 1: Hybrid QML pipeline processing UAV imagery into quantum-optimized harvest intelligence.*
 
