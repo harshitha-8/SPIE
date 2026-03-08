@@ -16,68 +16,9 @@ Traditional spectral imagery analysis often struggles with the high-noise, highl
 
 Below is the **ICML/CVPR-grade System Architecture Flowchart**, detailing the parallel tracks of image processing, classical feature engineering, and quantum parameter optimization.
 
-```mermaid
-%%{init: {'theme': 'dark', 'themeVariables': { 'primaryColor': '#1A233A', 'primaryBorderColor': '#6c63ff', 'fontFamily': 'arial' }}}%%
-graph TD
-    classDef input fill:#0f172a,stroke:#38bdf8,stroke-width:2px,color:#fff
-    classDef classical fill:#1e1b4b,stroke:#8b5cf6,stroke-width:2px,color:#fff
-    classDef quantum fill:#064e3b,stroke:#10b981,stroke-width:2px,color:#fff
-    classDef output fill:#451a03,stroke:#f59e0b,stroke-width:2px,color:#fff
+![QuantumHarvest System Architecture Flowchart](architecture_diagram.png)
 
-    %% ── 1. Data Acquisition ──
-    I1["UAV RGB Overhead Imagery<br>(High-Res Cotton Fields)"]:::input
-    
-    %% ── 2. Computer Vision Pipeline (Boll Detection) ──
-    subgraph CV["Spatial Detection & Localization Engine (OpenCV)"]
-        CV1["CLAHE<br>(Contrast Limited Adaptive Histogram Equalization)"]:::classical
-        CV2["Multi-Scale Morphological<br>Top-Hat Transformations"]:::classical
-        CV3["HSV Masking & Otsu Thresholding<br>(Sub-Pixel Camouflage Detection)"]:::classical
-        CV4["Watershed-inspired<br>Contour Distance Transforms"]:::classical
-    end
-    
-    %% ── 3. Feature Engineering ──
-    subgraph FE["Classical Spectro-Textural Extraction"]
-        FE1["GLCM Textural Features<br>(Contrast, Correlation, Energy, Homogeneity)"]:::classical
-        FE2["Spectral Indices<br>(ExG, RBR, NDI, Channel Means)"]:::classical
-    end
-
-    %% ── 4. Hybrid Quantum Feature Selection (VAC-QFS) ──
-    subgraph QFS["Quantum Feature Selection (Qiskit + scikit-learn)"]
-        Q1["Mutual Information Filter<br>(Top 6 Candidates)"]:::classical
-        Q2["Data Encoding:<br>ZZFeatureMap (Entanglement)"]:::quantum
-        Q3["Parameterized Ansatz:<br>RealAmplitudes (Ry + CX)"]:::quantum
-        Q4["Combinatorial Subset Search<br>C(6,4) = 15 Evaluations"]:::quantum
-        Q5["COBYLA Optimizer<br>(Gradient-Free Convergence)"]:::quantum
-    end
-
-    %% ── 5. Output & Synthesis ──
-    subgraph OUT["Final Harvest Intelligence"]
-        O1["Support Vector Machine (RBF Matrix)"]:::output
-        O2["Defoliation Readiness Vertex<br>(PRE vs POST Stage)"]:::output
-        O3["Cotton Boll Density Scatter Map<br>(Physical Yield Estimate)"]:::output
-    end
-
-    %% ── Routing ──
-    I1 -->|"Spatial Topology"| CV1
-    CV1 --> CV2 --> CV3 --> CV4
-    CV4 --> O3
-
-    I1 -->|"Pixel Modalities"| FE1
-    I1 -->|"Pixel Modalities"| FE2
-
-    FE1 --> Q1
-    FE2 --> Q1
-
-    Q1 -->|"Candidate Subsets"| Q2
-    Q2 -->|"Hilbert Mapping"| Q3
-    Q3 -->|"Variational State"| Q5
-    Q5 -.->|"Parameter Updates"| Q3
-    Q3 -->|"Expectation Values"| Q4
-    
-    Q4 -->|"Optimal 4-Feature Sub-manifold"| O1
-    O1 -->|"Classification"| O2
-
-```
+*Figure 1: Hybrid QML pipeline processing UAV imagery into quantum-optimized harvest intelligence.*
 
 ---
 
