@@ -141,7 +141,7 @@ def extract_features(img_array: np.ndarray) -> dict:
 # ─── Confidence Gauge Plot ────────────────────────────────────────────────────
 def make_confidence_plot(post_pct: float, pre_pct: float, label: str) -> np.ndarray:
     """Returns a matplotlib plot as a numpy array for Gradio display."""
-    fig, ax = plt.subplots(figsize=(7, 3.2))
+    fig, ax = plt.subplots(figsize=(7, 3.6))
     fig.patch.set_facecolor('#0f1117')
     ax.set_facecolor('#0f1117')
 
@@ -159,12 +159,24 @@ def make_confidence_plot(post_pct: float, pre_pct: float, label: str) -> np.ndar
                    edgecolor='none', zorder=3)
 
     for bar, val in zip(bars, values):
-        ax.text(min(val + 2, 98), bar.get_y() + bar.get_height()/2,
-                f'{val:.1f}%',
-                va='center', ha='left', fontsize=15, fontweight='bold',
-                color='white')
+        if val >= 88:
+            x_pos = val - 6
+            ha = 'right'
+        else:
+            x_pos = min(val + 2, 108)
+            ha = 'left'
+        ax.text(
+            x_pos,
+            bar.get_y() + bar.get_height()/2,
+            f'{val:.1f}%',
+            va='center',
+            ha=ha,
+            fontsize=14,
+            fontweight='bold',
+            color='white'
+        )
 
-    ax.set_xlim(0, 115)
+    ax.set_xlim(0, 110)
     ax.set_xlabel('Confidence (%)', color='#aaaaaa', fontsize=11)
     ax.tick_params(colors='#cccccc', labelsize=12)
     ax.spines[:].set_visible(False)
@@ -174,10 +186,16 @@ def make_confidence_plot(post_pct: float, pre_pct: float, label: str) -> np.ndar
 
     decision = 'POST-DEFOLIATION — Ready to Harvest 🚜' if label == 'Post_Defoliation' \
                else 'PRE-DEFOLIATION — Leaves Present 🌿'
-    ax.set_title(f'Prediction: {decision}',
-                 color='white', fontsize=13, fontweight='bold', pad=12)
+    ax.set_title(
+        f'Prediction: {decision}',
+        color='white',
+        fontsize=11,
+        fontweight='bold',
+        pad=14,
+        wrap=True,
+    )
 
-    plt.tight_layout()
+    plt.tight_layout(rect=[0, 0, 1, 0.94])
     buf = io.BytesIO()
     plt.savefig(buf, format='png', dpi=130, bbox_inches='tight',
                 facecolor=fig.get_facecolor())
