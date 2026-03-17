@@ -12,7 +12,7 @@ pinned: false
 # 🌿 QuantumHarvest: Cotton Defoliation Intelligence
 
 [![GitHub Repository](https://img.shields.io/badge/GitHub-View_Repository-blue?logo=github)](https://github.com/harshitha-8/SPIE)
-[![Gradio Space](https://img.shields.io/badge/Gradio-Web_App-ff6600?logo=gradio)](https://huggingface.co/spaces/yourname/quantum-harvest) <!-- Replace with actual Hugging Face link when deployed -->
+[![Gradio Space](https://img.shields.io/badge/Gradio-Web_App-ff6600?logo=gradio)](https://huggingface.co/spaces/harshitha-8/quantum-harvest)
 
 QuantumHarvest is a **Hybrid Quantum-Classical Machine Learning** application designed to evaluate the defoliation readiness of cotton fields using UAV (drone) RGB imagery. 
 
@@ -59,6 +59,8 @@ pip install -r requirements.txt
 python app.py
 ```
 Once the server starts, open your browser and navigate to the local address provided (usually `http://127.0.0.1:7860`).
+
+On Hugging Face Spaces, the app now uses the platform-provided `PORT` automatically and binds to `0.0.0.0`, which is required for hosted deployment.
 
 ---
 

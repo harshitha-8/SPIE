@@ -51,6 +51,19 @@ ALL_SUBSETS   = {
 HERE      = os.path.dirname(os.path.abspath(__file__))
 MODEL_PKL = os.path.join(HERE, 'model.pkl')
 
+
+def get_server_port() -> int:
+    return int(os.getenv("PORT", "7860"))
+
+
+def get_server_name() -> str:
+    requested = os.getenv("GRADIO_SERVER_NAME") or os.getenv("HOST")
+    if requested:
+        return requested
+    if os.getenv("SPACE_ID") or os.getenv("HF_SPACE_ID"):
+        return "0.0.0.0"
+    return "127.0.0.1"
+
 # ─── Load model ──────────────────────────────────────────────────────────────
 if os.path.exists(MODEL_PKL):
     MODEL = joblib.load(MODEL_PKL)
@@ -803,4 +816,8 @@ with gr.Blocks(
     )
 
 if __name__ == "__main__":
-    demo.launch(share=True, server_port=7860)
+    demo.launch(
+        share=False,
+        server_name=get_server_name(),
+        server_port=get_server_port(),
+    )
