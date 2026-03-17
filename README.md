@@ -62,6 +62,28 @@ Once the server starts, open your browser and navigate to the local address prov
 
 On Hugging Face Spaces, the app now uses the platform-provided `PORT` automatically and binds to `0.0.0.0`, which is required for hosted deployment.
 
+## Deploy To Hugging Face Space
+
+Hugging Face Spaces uses its own git repository. Updating this GitHub repository alone does not update the live Space app.
+
+To publish this exact app to your Space, push the same files to the Space repo:
+
+```bash
+git clone https://github.com/harshitha-8/SPIE.git
+cd SPIE
+git remote add hf https://huggingface.co/spaces/Harshitha09/quantum_Harvest
+git push hf main
+```
+
+If `hf` already exists as a remote, update it instead:
+
+```bash
+git remote set-url hf https://huggingface.co/spaces/Harshitha09/quantum_Harvest
+git push hf main
+```
+
+You will be prompted for your Hugging Face credentials or access token with write permission.
+
 ---
 
 ## 📸 Using the Application
