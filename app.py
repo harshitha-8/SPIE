@@ -690,12 +690,9 @@ with gr.Blocks(
                 sources=["upload", "clipboard"],
                 elem_id="upload-box",
             )
-            # Dedicated file-picker button (reliable cross-browser alternative
-            # to clicking the small icon inside the image panel)
-            file_picker = gr.UploadButton(
-                "📂  CHOOSE IMAGE FILE",
-                file_types=["image"],
-                elem_id="file-picker-btn",
+            gr.Markdown(
+                "Upload or paste a UAV cotton image, then run the analysis.",
+                elem_id="upload-help",
             )
             submit_btn = gr.Button(
                 "⚛  RUN QUANTUM ANALYSIS",
@@ -734,7 +731,6 @@ with gr.Blocks(
                     interactive=False,
                     elem_classes="feat-box",
                     elem_id="boll-count-box",
-                    scale=0,
                 )
 
             # Boll detection image — shown IMMEDIATELY below verdict, full width
@@ -797,22 +793,6 @@ with gr.Blocks(
         inputs=[image_input],
         outputs=[conf_out, feat_out, qml_out, boll_img_out,
                  verdict_box, f1, f2, f3, f4, boll_count_out]
-    )
-
-    # Wire the dedicated file-picker button → loads selected file into image_input
-    def _load_file(file_data):
-        if file_data is None:
-            return None
-        import cv2
-        img = cv2.imread(file_data)
-        if img is None:
-            return None
-        return cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-
-    file_picker.upload(
-        fn=_load_file,
-        inputs=[file_picker],
-        outputs=[image_input],
     )
 
 if __name__ == "__main__":
