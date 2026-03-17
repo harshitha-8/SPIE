@@ -12,7 +12,7 @@ pinned: false
 # 🌿 QuantumHarvest: Cotton Defoliation Intelligence
 
 [![GitHub Repository](https://img.shields.io/badge/GitHub-View_Repository-blue?logo=github)](https://github.com/harshitha-8/SPIE)
-[![Gradio Space](https://img.shields.io/badge/Gradio-Web_App-ff6600?logo=gradio)](https://huggingface.co/spaces/harshitha-8/quantum-harvest)
+[![Gradio Space](https://img.shields.io/badge/Gradio-Web_App-ff6600?logo=gradio)](https://huggingface.co/spaces/Harshitha09/quantum_Harvest)
 
 QuantumHarvest is a **Hybrid Quantum-Classical Machine Learning** application designed to evaluate the defoliation readiness of cotton fields using UAV (drone) RGB imagery. 
 
