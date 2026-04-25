@@ -1,0 +1,86 @@
+# Slide 22: References
+
+- [1] H. Zhao, C. Ren, X. Li, T. Lin,
+- et al
+- ., “Diagnostic study of defoliation and boll opening effects on machine-harvested cotton using multi-source UAV remote sensing data,”
+- Industrial Crops and Products
+- , vol. 237, p. 121827, 2025,
+- doi
+- : 10.1016/j.indcrop.2025.121827.
+- [2] P. Chen, W. Xu, Y. Zhan, W. Yang, J. Wang, and Y. Lan, “Evaluation of cotton defoliation rate and establishment of spray prescription map using remote sensing imagery,”
+- Remote Sensing
+- , vol. 14, no. 17, p. 4206, 2022,
+- doi
+- : 10.3390/rs14174206.
+- [3] N.
+- Aierken
+- , B. Yang, Y. Li, P. Jiang, G. Pan, and S. Li, “A review of unmanned aerial vehicle based remote sensing and machine learning for cotton crop growth monitoring,”
+- Computers and Electronics in Agriculture
+- , vol. 227, pt. 2, p. 109601, 2024,
+- doi
+- : 10.1016/j.compag.2024.109601.
+- [4] Y. Wang, Z. Zhang, C. Xiao, T. Zhang, K. Yu, C. Zhang, Q. Liao, F. Li, S. Wan, G. Cao, X. Tang, M. Du, and Z. Li, “Characterizing cotton defoliation progress via UAV-based multispectral-derived leaf area index and analysis of influencing factors,”
+- Remote Sensing
+- , vol. 18, no. 4, p. 609, 2026,
+- doi
+- : 10.3390/rs18040609.
+- [5] L. Zhang, B. Sun, D. Zhao, C. Shan, G. Wang, C. Song, P. Chen, and Y. Lan, “Prediction of cotton FPAR and construction of defoliation spraying prescription map based on multi-source UAV images,”
+- Computers and Electronics in Agriculture
+- , vol. 220, p. 108897, 2024,
+- doi
+- : 10.1016/j.compag.2024.108897.
+- [6] J. Tan, J. Ding, Z. Wang, L. Han, X. Wang, Y. Li, Z. Zhang, S. Meng, W. Cai, and Y. Hong, “Estimating soil salinity in mulched cotton fields using UAV-based hyperspectral remote sensing and a Seagull Optimization Algorithm-Enhanced Random Forest Model,”
+- Computers and Electronics in Agriculture
+- , vol. 221, p. 109017, 2024,
+- doi
+- : 10.1016/j.compag.2024.109017.
+- [7] E. Gil-Fuster, J. Eisert, and C. Bravo-Prieto, “Understanding quantum machine learning also requires rethinking generalization,”
+- Nature Communications
+- , vol. 15, art. no. 2277, 2024,
+- doi
+- : 10.1038/s41467-024-45882-z.
+- [8] F. Hu, S. A. Khan, N. T. Bronn, G. Angelatos, G. E. Rowlands, G. J.
+- Ribeill
+- ,
+- et al
+- ., “Overcoming the coherence time barrier in quantum machine learning on temporal data,”
+- Nature Communications
+- , vol. 15, art. no. 7491, 2024,
+- doi
+- : 10.1038/s41467-024-51162-7.
+- [9] S.
+- Raubitzek
+- , S.
+- Schrittwieser
+- , A. Schatten, and K. Mallinger, “Quantum inspired kernel matrices: Exploring symmetry in machine learning,”
+- Physics Letters A
+- , vol. 525, p. 129895, 2024,
+- doi
+- : 10.1016/j.physleta.2024.129895.
+- [10] D. Pranjić, B. C.
+- Mummaneni
+- , and C.
+- Tutschku
+- , “Quantum annealing-based feature selection,”
+- Neurocomputing
+- , vol. 658, p. 131673, 2025,
+- doi
+- : 10.1016/j.neucom.2025.131673.
+- [11] B. Kaushik, A. Rajpal, and N. Kumar, “QEFS: Quantum evolutionary feature selector for a real quantum computer,”
+- Applied Soft Computing
+- , early access, 2026, Art. no. 114965,
+- doi
+- : 10.1016/j.asoc.2026.114965.
+- [12] Y. Vivek, V. Ravi, and P. R. Krishna, “Quantum-inspired evolutionary algorithms for feature subset selection: A comprehensive survey,”
+- Quantum Information Processing
+- , vol. 24, no. 7, art. no. 196, 2025,
+- doi
+- : 10.1007/s11128-025-04787-6.
+- [13] A. K. Mandal and B. Chakraborty, “Quantum computing and quantum-inspired techniques for feature subset selection: A review,”
+- Knowledge and Information Systems
+- , early access, 2024,
+- doi
+- : 10.1007/s10115-024-02282-5.
+- 4/24/26
+- SPIE 2026
+- 22
