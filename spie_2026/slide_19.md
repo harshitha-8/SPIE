@@ -1,0 +1,25 @@
+# Slide 19: Conclusion
+
+- The study shows that quantum-guided subset selection can produce compact, interpretable feature sets for cotton defoliation assessment from UAV imagery
+- This work presented a
+- hybrid quantum-classical framework
+- for feature selection in cotton defoliation monitoring from UAV imagery.
+- The method operates on
+- interpretable spectral, textural, and structural descriptors.
+- The results show that
+- AgriQFS identifies a compact subset
+- that preserves discriminative structure between pre- and post-defoliation states.
+- Under clean conditions, the framework achieves strong performance while also maintaining
+- low false-positive behavior
+- , which is important for field reliability.
+- Under perturbed conditions, the method is
+- not uniformly best across every scenario
+- , but it remains competitive and shows its clearest value in regimes where
+- interaction-aware selection
+- matters.
+- Overall, supports the idea that
+- quantum-emulated feature selection is scientifically useful as a subset-discovery mechanism
+- , even when final inference remains classical method.
+- 4/24/26
+- SPIE 2026
+- 19
