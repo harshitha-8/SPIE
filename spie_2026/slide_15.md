@@ -1,0 +1,33 @@
+# Slide 15: Quantum Encoding
+
+- Candidate feature subsets are mapped into a 4-qubit representation so that descriptor interactions can be expressed within the quantum state before scoring
+- 1
+- 2
+- 3
+- 4
+- Input
+- Candidate subset of descriptors from the 14-D feature space
+- Feature Map
+- Classical descriptor values are embedded using the
+- ZZFeatureMap
+- Interaction Encoding
+- Pairwise relationships are introduced into the quantum phase
+- .
+- Prepared State
+- The encoded state becomes the input to the variational circuit.
+- Notation meaning
+- .
+- : the classical input vector, here the selected feature descriptor values
+- :
+- the quantum feature map that encodes the classical input into a
+- qua.ntum
+- state.
+- :
+- the initial 4-qubit state, meaning all four qubits start in the
+- state.
+- : tensor product repeated over 4 qubits.
+- :
+- the classical feature vector is transformed into an encoded 4-qubit quantum state.
+- 4/24/26
+- SPIE 2026
+- 15
