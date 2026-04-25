@@ -1,0 +1,21 @@
+# Slide 9: Hybrid Quantum-Classical Approach
+
+- This research work uses a
+- variational quantum circuit (VQC)
+- as a
+- feature selector.
+- The quantum part is simulated on a classical computer using
+- Python and Qiskit on macOS.
+- This lets us test
+- superposition, entanglement, and interaction-aware search
+- in a reproducible way without requiring real quantum hardware.
+- The selected subset is then passed to a
+- classical Support Vector Machine with a Radial Basis Function (RBF) kernel
+- , which keeps the final pipeline practical and deployable.
+- So the contribution is a
+- hybrid workflow
+- : quantum-emulated search for better feature subsets, classical learning for stable prediction.
+- We do not run on a physical quantum computer, we emulate the quantum circuit in Python to study whether quantum-inspired feature interactions improve feature selection
+- 4/24/26
+- SPIE 2026
+- 9
