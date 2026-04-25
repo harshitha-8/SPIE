@@ -1,0 +1,41 @@
+# Slide 17: Robustness Across Imaging Conditions
+
+- The table compares subset-selection methods under fog, glare, shadow, and additive noise to evaluate how stable each selected feature
+- Method
+- Fog
+- Glare
+- Shadow
+- Noise (σ = 0.15)
+- AgriQFS (QFS-k4)
+- 0.8301
+- 0.6280
+- 0.7699
+- 0.4903
+- MRMR (MI-k4)
+- 0.9054
+- 0.5935
+- 0.9634
+- 0.4624
+- RFE-k4
+- 0.8667
+- 0.6237
+- 0.7699
+- 0.4516
+- NonExG-k4
+- 0.7333
+- 0.5742
+- 0.7699
+- 0.4602
+- AgriQFS (QFS-k4):
+- Agricultural Quantum Feature Selection, using a quantum-emulated search to select 4 features.
+- MRMR (MI-k4):
+- Minimum Redundancy Maximum Relevance, a mutual-information filter baseline with 4 features.
+- RFE-k4:
+- Recursive Feature Elimination, a wrapper-based 4-feature baseline.
+- NonExG-k4:
+- an ablation baseline excluding the Excess Green cue to test subset dependence.
+- Our framework is more effective because it performs interaction-aware subset selection, allowing complementary spectral and textural cues to be chosen jointly
+- Table 1 :Comparative Robustness of Feature-Selection Methods
+- 4/24/26
+- SPIE 2026
+- 17
