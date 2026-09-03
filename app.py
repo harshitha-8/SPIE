@@ -644,7 +644,11 @@ body, .gradio-container { background: #020510 !important; }
     letter-spacing: 0.18em !important; text-transform: uppercase !important;
     color: #2a3150 !important;
 }
-#footer-credit span { color: #4d4aa8 !important; }
+#footer-credit .author-name {
+    color: #b9afff !important;
+    font-weight: 700 !important;
+    text-shadow: 0 0 8px rgba(108, 99, 255, 0.35);
+}
 
 /* ── Hide Gradio footer ── */
 footer { display: none !important; }
@@ -799,7 +803,7 @@ with gr.Blocks(
     # ── FOOTER ──────────────────────────────────────────────────────────────
     gr.HTML("""
     <div id="footer-credit">
-      <p>© 2025 &nbsp;<span>HARSHITHA MANJUNATHA</span>&nbsp; · All Rights Reserved</p>
+      <p>© 2026 &nbsp;<span class="author-name">HARSHITHA MANJUNATHA</span>&nbsp; · All Rights Reserved</p>
       <p style="margin-top:4px; font-size:0.6rem; color:#1c2340;">
         QuantumHarvest · Hybrid QML-Classical Agricultural Intelligence · Built with Qiskit + Gradio
       </p>
