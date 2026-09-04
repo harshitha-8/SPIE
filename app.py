@@ -645,9 +645,9 @@ body, .gradio-container { background: #020510 !important; }
     color: #2a3150 !important;
 }
 #footer-credit .author-name {
-    color: #b9afff !important;
+    color: #8f84e8 !important;
     font-weight: 700 !important;
-    text-shadow: 0 0 8px rgba(108, 99, 255, 0.35);
+    text-shadow: 0 0 6px rgba(108, 99, 255, 0.25);
 }
 
 /* ── Hide Gradio footer ── */
