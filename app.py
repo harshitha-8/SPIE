@@ -668,7 +668,7 @@ with gr.Blocks(
         block_title_text_color="#6c63ff",
         input_background_fill="#050810",
     ),
-    title="QuantumHarvest · Cotton Defoliation Intelligence",
+    title="CottonQ Vision · Cotton Defoliation Intelligence",
     css=CUSTOM_CSS,
 ) as demo:
 
@@ -676,7 +676,7 @@ with gr.Blocks(
     gr.HTML("""
     <div style="padding: 48px 0 8px;">
       <div id="hero-title">
-        QuantumHarvest<br/>
+        CottonQ Vision<br/>
         <span style="font-size:0.55em; letter-spacing:0.18em; font-weight:400;">
           COTTON DEFOLIATION INTELLIGENCE SYSTEM
         </span>
@@ -805,7 +805,7 @@ with gr.Blocks(
     <div id="footer-credit">
       <p>© 2026 &nbsp;<span class="author-name">HARSHITHA MANJUNATHA</span>&nbsp; · All Rights Reserved</p>
       <p style="margin-top:4px; font-size:0.6rem; color:#1c2340;">
-        QuantumHarvest · Hybrid QML-Classical Agricultural Intelligence · Built with Qiskit + Gradio
+        CottonQ Vision · Hybrid QML-Classical Agricultural Intelligence · Built with Qiskit + Gradio
       </p>
     </div>
     """)

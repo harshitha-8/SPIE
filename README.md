@@ -1,5 +1,5 @@
 ---
-title: QuantumHarvest Cotton Defoliation Intelligence
+title: CottonQ Vision Cotton Defoliation Intelligence
 emoji: 🌿
 colorFrom: violet
 colorTo: cyan
@@ -9,12 +9,12 @@ app_file: app.py
 pinned: false
 ---
 
-# 🌿 QuantumHarvest: Cotton Defoliation Intelligence
+# 🌿 CottonQ Vision: Cotton Defoliation Intelligence
 
 [![GitHub Repository](https://img.shields.io/badge/GitHub-View_Repository-blue?logo=github)](https://github.com/harshitha-8/SPIE)
 [![Gradio Space](https://img.shields.io/badge/Gradio-Web_App-ff6600?logo=gradio)](https://huggingface.co/spaces/Harshitha09/quantum_Harvest)
 
-QuantumHarvest is a **Hybrid Quantum-Classical Machine Learning** application designed to evaluate the defoliation readiness of cotton fields using UAV (drone) RGB imagery. 
+CottonQ Vision is a **Hybrid Quantum-Classical Machine Learning** application designed to evaluate the defoliation readiness of cotton fields using UAV (drone) RGB imagery.
 
 By utilizing advanced quantum variational circuits (VQC) and computer vision, this tool accurately classifies fields into **Pre-Defoliation** or **Post-Defoliation** stages, alongside a robust algorithm to physically count visible cotton bolls.
 
